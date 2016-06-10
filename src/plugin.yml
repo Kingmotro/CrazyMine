@@ -1,0 +1,9 @@
+name: CrazyMine
+main: com.nascnova.crazymine.Main
+version: 1.0.0-SNAPSHOT
+author: NascentNova
+commands:
+    cm:
+        description: 'CrazyMine''s main command.'
+        permission: cm.command
+        permission-message: '§cYou don''t have permission to do that.'

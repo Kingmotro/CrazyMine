@@ -1,0 +1,6 @@
+item:
+    point-selector:
+        name: '&6Point Selector'
+        lore:
+            - '&fLeft click &7to select point 1.'
+            - '&fRight click &7to select point 2.'

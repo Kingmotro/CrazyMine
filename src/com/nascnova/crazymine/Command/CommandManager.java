@@ -9,17 +9,17 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.Plugin;
 
 public class CommandManager implements CommandExecutor {
 	private String cmdPrefix;
 	private boolean prefixIgnoreCase;
-	private JavaPlugin plugin;
+	private Plugin plugin;
 	private List<Object> registeredCommands;
 
 	private String invalidCommand;
 
-	public CommandManager(JavaPlugin plugin, String prefix, boolean ignoreCase) {
+	public CommandManager(Plugin plugin, String prefix, boolean ignoreCase) {
 		this.plugin = plugin;
 		this.cmdPrefix = prefix;
 		this.prefixIgnoreCase = ignoreCase;
@@ -98,6 +98,10 @@ public class CommandManager implements CommandExecutor {
 
 	public void setInvalidCommandMessage(String message) {
 		this.invalidCommand = message;
+	}
+	
+	public String getInvalidCommandMessage() {
+		return this.invalidCommand;
 	}
 
 	@Override

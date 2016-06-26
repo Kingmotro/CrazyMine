@@ -12,8 +12,4 @@ public class CmdVersion {
 		s.sendMessage(ChatColor.GREEN + "CrazyMine " + Main.getPlugin().version + " By NascentNova");
 		s.sendMessage(ChatColor.GREEN + "Please report bugs on spigot forum");
 	}
-	@Command(name="test",arglength=0, perm="cm.test", opBypass=true, onlyPlayer=false)
-	public void a(CommandSender s, String[] a) {
-		s.sendMessage(ChatColor.GREEN + "test success!");
-	}
 }
